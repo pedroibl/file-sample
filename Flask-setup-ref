@@ -1,0 +1,46 @@
+Step 1 :    create the virtual environment
+
+    virtualenv <proj-name>
+    
+ Step 2 :    cd to the proj dicrectory and type:
+ 
+     source bin/activate
+       
+ Step 3 :     Install the packages inside the folder proj ( virtualenv ) 
+ 
+      pip3 install psycopg2-binary
+      pip3 install sqlalchemy
+      pip3 install flask
+      
+Step 4 :    Build a flask aplication
+
+--------------------
+app.py sample
+--------------------
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def show_projects():
+    return render_template("index.html")
+
+app.run(debug=True, host="127.0.0.1", port=3000)
+
+
+  run:
+  
+  python3 app.py
+  
+ 
+
+
+---------------------
+Step 5 :  Create another directory 
+
+      templates - So the router function can access it 
+
+Step 6 :  Create the index.html file 
+
+
