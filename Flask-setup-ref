@@ -33,9 +33,88 @@ app.run(debug=True, host="127.0.0.1", port=3000)
   
   python3 app.py
   
+---------------
+Another Sample
+----------------
+
+
+from flask import Flask, render_template 
  
+app = Flask(__name__) 
+ 
+@app.route('/') 
+def index(): 
+	return render_template('index.html') 
+ 
+@app.route('/about/') 
+def about(): 
+	return render_template('about.html') 
+ 
+if __name__ == '__main__': 
+	app.run(debug=True) 
 
 
+
+
+
+
+------------
+Index.html 
+------------
+
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	{% block title %} 
+		SiteName 
+	{% endblock %} 
+</head> 
+<body> 
+	<nav> 
+		<a href="/">Home</a> 
+		<a href="/about/">About</a> 
+	</nav> 
+	<hr /> 
+	{% block body %} 
+ 
+	{% endblock %} 
+	<hr /> 
+	<footer> 
+		<p>SiteName &copy; 2018</p> 
+	</footer> 
+</body> 
+</html> 
+---------
+
+{% extends 'base.html' %} 
+{% block body %} 
+<h2>Home is working!</h2> 
+{% endblock %} 
+
+
+{% extends 'base.html' %} 
+{% block title %} 
+About 
+{% endblock %} 
+{% block body %} 
+<h2>About is working!</h2> 
+{% endblock %} 
+
+
+import pymysql
+pymysql.install_as_MySQLdb()  # Install MySQL driver
+import MySQLdb
+from sqlalchemy import create_engine
+
+engine = create_engine(f'mysql+mysqldb://{db_user}:{db_password}@{host}/{db_name}')
+
+
+
+MySQLAlchemy documentation 
+
+https://docs.sqlalchemy.org/en/14/core/engines.html?highlight=create_engine#sqlalchemy.create_engine
+We
 ---------------------
 Step 5 :  Create another directory 
 
