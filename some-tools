@@ -1,0 +1,50 @@
+Some installers 
+
+
+tap-forms
+snes9x
+scriptql
+script-debugger
+
+xampp
+* macOS server - download on mac app store
+* el capitain - download at apple support website - https://support.apple.com/kb/dl1885?locale=en_GB
+
+homebrew
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install wget
+brew install dbschema
+curl
+nmap
+virtualbox
+nordvpn
+microsoft-office
+
+filezilla pro 
+mysql - macOS 11 (ARM, 64-bit), DMG Archive
+wget https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.28-macos11-arm64.dmg
+
+adobe-creative-cloud
+atom
+discord
+onedrive
+dropbox
+google-chrome
+google-drive
+iterm2
+microsoft-edge
+notion
+obsidian
+postman
+visual-studio-code
+node
+imagemagick
+ffmpeg
+htop
+git
+youtube-dl
+speedtest-cli
+tree
+openssl
