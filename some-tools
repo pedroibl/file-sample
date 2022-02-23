@@ -12,6 +12,8 @@ To start download
     - curl
     - wget
     - nmap
+    - openssl
+    - openssh
     
   * Manually Download MySQL ARM 64 bits for mac M1 from the community webpage
       mysql - macOS 11 (ARM, 64-bit), DMG Archive
@@ -21,7 +23,7 @@ To start download
     - brew install virtualbox
     - brew install tree
     - git
-    - openssl
+    - 
     - htop
     - speedtest-cli
   
