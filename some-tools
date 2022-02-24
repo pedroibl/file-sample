@@ -65,7 +65,7 @@ tutorial sobre como fazer um pendrive bootable
 https://www.linkedin.com/learning/building-an-ubuntu-server/creating-installation-media?autoAdvance=true&autoSkip=true&autoplay=true&resume=false
 
 
-OH MY ZSH 
+OH MY ZSH Instalation - https://ohmyz.sh
 
 | **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 | **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
@@ -111,6 +111,8 @@ plugins=(
   ruby
 )
 ```
+
+https://ohmyz.sh
 
 _Note that the plugins are separated by whitespace (spaces, tabs, new lines...). **Do not** use commas between them or it will break._
 
