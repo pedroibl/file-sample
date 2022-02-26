@@ -2,6 +2,7 @@
 
 # Installs Homebrew Casks.
 
+brew install --cask wireshark
 brew install --cask dropbox
 brew install --cask firefox
 brew install --cask google-chrome
