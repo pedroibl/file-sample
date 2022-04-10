@@ -1,0 +1,8 @@
+#add mysql to the $PATH
+
+# Locate your ~/.zshrc file on mac os
+
+# Add the below line 
+export PATH=${PATH}:/usr/local/mysql/bin/
+
+# Save the file 
