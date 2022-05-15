@@ -5,7 +5,7 @@
   * filezilla pro 
 
 ## Homebrew
-    -     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     
 ## Manually Download MySQL ARM 64 bits for mac M1 from the community webpage
   
