@@ -37,20 +37,14 @@ OH MY ZSH Instalation - https://ohmyz.sh
 ## OH My ZSH Plugins sample
 !!! zsh-autosuggestions plugin requer external install 
 
-plugins=(
-  git
-  bundler
-  dotenv
-  macos
-  rake
-  rbenv
-  ruby
-  zsh-autosuggestions
-  jsontools
-  web-search
-  sudo
-)
 
+###################*************************###################*************************###################*************************###################*************************
+
+
+plugins=(nvm git zsh-syntax-highlighting bundler dotenv macos rake rbenv ruby zsh-autosuggestions jsontools web-search sudo urltools copypath copyfile)
+
+
+###################*************************###################*************************###################*************************###################*************************
 
 Reminder
 ## To modifify a $PATH
