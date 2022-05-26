@@ -11,6 +11,11 @@
   
       mysql - macOS 11 (ARM, 64-bit), DMG Archive
             - wget https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.28-macos11-arm64.dmg
+	    
+## Docker
+
+	wget https://desktop.docker.com/mac/main/arm64/Docker.dmg
+	
   
 
 ## PHP  
