@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install2
-myInstalls2=("iterm2" "nmap" "openssl" "openssh" "tree" "git" "speedtest-cli" "htop" "microsoft-office" "adobe-creative-cloud" "atom" "discord" "onedrive" "dropbox" "google-drive" "microsoft-edge" "notion" "postman" "imagemagick" "ffmpeg" "youtube-dl")
+myInstalls2=("nmap" "openssl" "openssh" "tree" "git" "speedtest-cli" "htop")
 
 for str in ${myInstalls2[@]}; do
     sudo apt install -y $str >>installOutput.txt
