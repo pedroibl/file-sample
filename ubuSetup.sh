@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#!/bin/bash
 
 # Install
 myInstalls1=("python3" "dotenet")
