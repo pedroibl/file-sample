@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#!/bin/bash
 
 # Install2
 myInstalls2=("iterm2" "nmap" "openssl" "openssh" "tree" "git" "speedtest-cli" "htop" "microsoft-office" "adobe-creative-cloud" "atom" "discord" "onedrive" "dropbox" "google-drive" "microsoft-edge" "notion" "postman" "imagemagick" "ffmpeg" "youtube-dl")
