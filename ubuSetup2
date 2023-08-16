@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Install2
-myInstalls2=("nmap" "openssl" "openssh" "tree" "git" "speedtest-cli" "htop")
+# Install tools
+tools=("nmap" "openssl" "openssh" "tree" "git" "speedtest-cli" "htop")
 
-for str in ${myInstalls2[@]}; do
-    sudo apt install -y $str >>installOutput.txt
+for tool in "${tools[@]}"; do
+    sudo apt install -y "$tool" >> installOutput.txt 2>&1
 done

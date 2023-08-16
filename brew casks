@@ -1,34 +1,44 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
-# Installs Homebrew Casks.
+# List of tools in alphabetical order
+tools=(
+    adobe-creative-cloud
+    discord
+    docker
+    docker-completion
+    docker-compose
+    dbschema
+    drawio
+    dropbox
+    ffmpeg
+    fontconfig
+    git
+    google-chrome
+    google-drive
+    htop
+    imagemagick
+    iterm2
+    microsoft-edge
+    microsoft-office
+    microsoft-teams
+    nordvpn
+    nmap
+    notion
+    obsidian
+    onedrive
+    openssh
+    openssl
+    postman
+    speedtest-cli
+    tree
+    virtualbox
+    visual-studio-code
+    wireshark
+    youtube-dl
+    zlib
+    zsh-syntax-highlighting
+)
 
-brew install --cask wireshark
-brew install --cask dropbox
-brew install --cask firefox
-brew install --cask google-chrome
-brew install --cask visual-studio-code
-brew install --cask obsidian
-brew install --cask iterm2
-brew install --cask virtualbox
-brew install --cask nmap
-brew install --cask openssl
-brew install --cask openssh
-brew install --cask tree
-brew install --cask git
-brew install --cask speedtest-cli
-brew install --cask htop
-brew install --cask dbschema
-brew install --cask nordvpn
-brew install --cask microsoft-office
-brew install --cask adobe-creative-cloud
-brew install --cask atom
-brew install --cask discord
-brew install --cask onedrive
-brew install --cask dropbox
-brew install --cask google-drive
-brew install --cask microsoft-edge
-brew install --cask notion
-brew install --cask postman
-brew install --cask imagemagick
-brew install --cask ffmpeg
-brew install --cask youtube-dl
+for tool in "${tools[@]}"; do
+    brew install "$tool"
+done
