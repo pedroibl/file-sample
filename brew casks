@@ -3,7 +3,7 @@
 
 # ************************ Make homebrew install tools at external hard_drive ***************
 # On .zprofile
-export HOMEBREW_PREFIX=/Volumes/YourDriveName/homebrew
+# export HOMEBREW_PREFIX=/Volumes/YourDriveName/homebrew
 # On .zshrc
 # export PATH="/Volumes/YourDriveName/homebrew/bin:$PATH"
 # On .zshrc
