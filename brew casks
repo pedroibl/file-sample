@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+
+# ************************ Make homebrew install tools at external hard_drive ***************
+# On .zprofile
+export HOMEBREW_PREFIX=/Volumes/YourDriveName/homebrew
+# On .zshrc
+# export PATH="/Volumes/YourDriveName/homebrew/bin:$PATH"
+# On .zshrc
+# export HOMEBREW_CACHE=/Volumes/YourDriveName/homebrew_cache
+# On .zshrc
+# export PATH="/Volumes/YourDriveName/homebrew_cache/bin:$PATH"
+
 # List of tools in alphabetical order
 tools=(
     adobe-creative-cloud
