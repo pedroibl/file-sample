@@ -28,3 +28,13 @@ sudo apt install csvkit
 sudo apt install rush
 sudo apt install bat
 ln -s /usr/bin/batcat ~/.local/bin/bat
+
+# Install GO and pup
+sudo apt install snap
+sudo snap install go --classic
+
+go install github.com/ericchiang/pup@latest
+
+# add GO bin to the $PATH
+export PATH=$PATH:/home/ubu/go/bin
+
