@@ -19,4 +19,6 @@ cd dsutils
 mv * ~/.local/bin
 
 # add ~/.local/bin to the path
+vim ~/.bashrc
 export PATH="$HOME/.local/bin:$PATH"
+source ~/.bashrc
