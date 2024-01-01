@@ -23,6 +23,8 @@ vim ~/.bashrc
 export PATH="$HOME/.local/bin:$PATH"
 source ~/.bashrc
 
-# CSVkit
+# CSVkit , baat and rush
 sudo apt install csvkit
 sudo apt install rush
+sudo apt install bat
+ln -s /usr/bin/batcat ~/.local/bin/bat
