@@ -22,3 +22,7 @@ mv * ~/.local/bin
 vim ~/.bashrc
 export PATH="$HOME/.local/bin:$PATH"
 source ~/.bashrc
+
+# CSVkit
+sudo apt install csvkit
+sudo apt install rush
