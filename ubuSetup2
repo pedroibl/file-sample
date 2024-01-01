@@ -14,4 +14,9 @@ sudo apt -f install
 # Install dsutils
 
 git clone https://github.com/jeroenjanssens/dsutils
-# add to the path dsutils folder 
+cd dsutils 
+# Delete files that aren't tools eg .git .gitignore LICENCE  and
+mv * ~/.local/bin
+
+# add ~/.local/bin to the path
+export PATH="$HOME/.local/bin:$PATH"
