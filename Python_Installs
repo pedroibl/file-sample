@@ -1,6 +1,6 @@
 ___
 ```python
-pip3.10 install openai langchain streamlite
+pip3 install openai langchain streamlite
 ```
 
 ```python
@@ -10,11 +10,11 @@ pip3 install python3-dotenv
 # Commands
 
 ```python
-sudo apt install python3 python3-pip
+sudo apt-get install python3-pip
 ```
 
 ```python
-sudo apt install python3.10-venv 
+sudo apt install python3-venv 
 ```
 
 ```python
@@ -35,12 +35,5 @@ pip3 install openai
 ```
 
 ```python
-pip3 install python3-dotenv
+pip install jupyter
 ```
-
-```python
-pip3 install jupyter
-```
-
-
-``
