@@ -23,6 +23,16 @@ vim ~/.bashrc
 export PATH="$HOME/.local/bin:$PATH"
 source ~/.bashrc
 
+sudo apt install curl
+sudo apt install xclip
+alias pbcopy='xclip --selection clipboard'
+
+
+## Install oh my bash and fonts
+Omybash documentation: https://github.com/ohmybash/oh-my-bash
+sudo apt-get install fonts-powerline
+bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
+
 # CSVkit , baat and rush
 sudo apt install csvkit
 sudo apt install rush
