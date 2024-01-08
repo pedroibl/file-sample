@@ -26,3 +26,4 @@ plugins=(
 alias pbcopy='xclip -selection clipboard'
 alias ll='ls -a'
 export PATH="$HOME/.local/bin:$PATH"
+alias bat='batcat'
