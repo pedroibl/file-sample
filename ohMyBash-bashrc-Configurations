@@ -22,9 +22,8 @@ plugins=(
   sudo
 )
 
-
-
+# Aliases and path append
 alias pbcopy='xclip -selection clipboard'
 alias ll='ls -a'
-export PATH="$HOME/.local/bin:$PATH"
 alias bat='batcat'
+export PATH="$HOME/.local/bin:$PATH"
