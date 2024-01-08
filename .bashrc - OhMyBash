@@ -143,4 +143,5 @@ source "$OSH"/oh-my-bash.sh
 
 alias pbcopy="xclip -selection clipboard"
 alias ll="ls -a"
-export $PATH="~/.local/bin:$PATH"
+alias bat='batcat'
+export PATH="$HOME/.local/bin:$PATH"
