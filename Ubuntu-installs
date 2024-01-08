@@ -1,5 +1,9 @@
 #!/bin/bash
 
+print_dark_yellow() {
+    echo -e "\033[0;33m$1\033[0m"
+}
+
 # Packages to install
 packages=(
     "git"
