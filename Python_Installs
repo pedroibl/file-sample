@@ -4,21 +4,8 @@
 # Python Documentation with install snippets
 https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
-
-
 ```python
-python3 -m pip install --pre openai streamlite
-
-python3 -m pip install langchain[all]
-
-
-```
-
-```python
-python3 -m pip install --pre python-dotenv
-```
-
-```python
+python3 -m pip install --upgrade pip
 
 python3 -m pip install --pre python-venv 
 ```
@@ -34,6 +21,20 @@ source .venv/bin/activate
 ```python
 python3 -m pip install -r requirements.txt
 ```
+
+```python
+python3 -m pip install --pre openai streamlite
+
+python3 -m pip install langchain[all]
+
+
+```
+
+```python
+python3 -m pip install --pre python-dotenv
+```
+
+
 
 #### Openai [[OpenAi]]
 ```python
