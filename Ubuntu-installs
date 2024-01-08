@@ -1,4 +1,11 @@
 
-
-
+echo" LEMBRE-SE > run: sudo mkdir -p ~/.local/bin"
+git
+software-properties-common
+snap
+curl
+vim
 xclip
+bat
+echo" Lembre-se de rodar: ln -s /usr/bin/batcat ~/.local/bin/bat  "
+echo" Depois que installar bat"
