@@ -8,14 +8,16 @@ sudo apt-get install -y \
     snapd \
     curl \
     vim \
-    xclip
+    xclip \
+    bat
 
 # Install bat via snap
-sudo snap install bat
 
 # Display reminders
 echo "LEMBRE-SE > run: sudo mkdir -p ~/.local/bin"
 echo "Lembre-se de rodar: ln -s /usr/bin/batcat ~/.local/bin/bat"
+echo "Lembre-se de add >   alias bat='batcat'  "
 echo "Depois que instalar o bat"
 
 # End of script
+
