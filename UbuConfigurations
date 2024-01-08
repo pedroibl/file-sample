@@ -1,0 +1,123 @@
+___
+| [[Linux Folder Structure]] | [[Linux Network]] | [[Bash]] | 
+
+# Alias ( Don’t use it with OhMyBash)
+
+```bash
+mkdir -p ~/.bash_aliases 
+```
+
+add to `~/.bashrc`
+```bash
+if [ -f ~/.bash_aliases ]; then
+.  ~/.bash_aliases
+fi
+```
+
+```bash
+source ~/.bashrc && source ~/.bash_aliases
+```
+
+add to `~/.bashrc`
+```bash
+alias pbcopy='xclip -selection clipboard'
+alias ll='ls -a'
+```
+# Install OhMyBash
+[Oh My Bash Repository - Docs ](https://github.com/ohmybash/oh-my-bash#via-curl)
+
+- Install via `wget`
+```bash
+bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
+```
+
+- update `~/.bash_profile`
+
+```bash
+if [[ -f ~/.bashrc ]]; then
+  source ~/.bashrc
+fi
+```
+
+#### OhMyBash PlugIns
+
+```bash
+
+```
+
+
+
+___
+# Installing Fonts - Systemwide
+#### Check what fonts are installed
+```bash
+fc-list
+```
+- In case not installed run 
+```
+sudo apt-get install fontconfig
+```
+
+
+Step 1
+```bash
+cd .local/share
+```
+- Install Powerline fonts on Ubuntu
+[Powerline Repository - Docs]
+
+At `.local/share` run:
+```bash
+git clone https://github.com/powerline/fonts.git --depth=1
+```
+
+```bash
+cd fonts
+```
+Install 
+```bash
+./install.sh
+```
+Go to home 
+```bash
+cd $HOME
+```
+
+#### Make the font available Systemwide
+```bash
+sudo cp -r ~/.local/share/fonts/*.ttf /usr/share/fonts
+```
+
+```bash
+sudo fc-cache -fv
+```
+
+Restart the system 
+```bash
+sudo reboot
+```
+
+After it the font will be available in the terminal to choose
+
+# Trim command
+
+```bash
+vim trim
+```
+
+```bash
+#!/bin/bash
+
+input="$@"
+trimmed=$(echo -n "$input" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
+echo "$trimmed"
+```
+
+```bash
+chmod +x trim
+```
+
+```bash
+sudo mv trim /usr/bin
+```
+
