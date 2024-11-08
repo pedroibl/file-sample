@@ -3,13 +3,13 @@
 
 # ************************ Make homebrew install tools at external hard_drive ***************
 # On .zprofile
-# export HOMEBREW_PREFIX=/Volumes/YourDriveName/homebrew
+# export HOMEBREW_PREFIX=“/Volumes/hard_drive/homebrew”
 # On .zshrc
-# export PATH="/Volumes/YourDriveName/homebrew/bin:$PATH"
+# export PATH="/Volumes/hard_drive/homebrew/bin:$PATH"
 # On .zshrc
-# export HOMEBREW_CACHE=/Volumes/YourDriveName/homebrew_cache
+# export HOMEBREW_CACHE=/Volumes/hard_drive/homebrew_cache
 # On .zshrc
-# export PATH="/Volumes/YourDriveName/homebrew_cache/bin:$PATH"
+# export PATH="/Volumes/hard_drive/homebrew_cache/bin:$PATH"
 
 # List of tools in alphabetical order
 tools=(
@@ -18,38 +18,38 @@ tools=(
     docker
     docker-completion
     docker-compose
-    dbschema
-    drawio
     dropbox
     ffmpeg
-    fontconfig
     git
     google-chrome
     google-drive
     htop
-    imagemagick
     iterm2
     microsoft-edge
-    microsoft-office
-    microsoft-teams
-    nordvpn
-    nmap
     notion
     obsidian
     onedrive
     openssh
     openssl
-    postman
+    curl
     speedtest-cli
     tree
-    virtualbox
     visual-studio-code
-    wireshark
-    youtube-dl
     zlib
     zsh-syntax-highlighting
+    bat
+    go
+    mactex
+    jq
+    xmlstarlet
+    parallel
+    xsv
+    pup
+    vowpal-wabbit
+    chatgpt
 )
 
 for tool in "${tools[@]}"; do
     brew install "$tool"
 done
+
