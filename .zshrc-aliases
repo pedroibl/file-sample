@@ -1,0 +1,37 @@
+# PLUGINS OH MY ZSH
+plugins=(
+      git
+      sudo
+      web-search
+      extract
+      colorize
+      macos
+      colored-man-pages
+      dash
+)
+
+# OH-MY-ZSH
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# My_alias
+alias l="ls -a"
+
+## My alias fabric
+for pattern_file in $HOME/.config/fabric/patterns/*; do
+    pattern_name=$(basename "$pattern_file")
+    alias_command="alias $pattern_name='fabric --pattern $pattern_name'"
+    eval "$alias_command"
+done
+
+
+# GO | Golang environment variables
+export GOROOT="/opt/homebrew/opt/go/libexec"
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
+export PATH="$PATH:/Users/pibl/go/bin"
+
+# PDF latex
+export PATH="/Library/TeX/texbin:$PATH"
+
+
